@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Brokerage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: maroon;
+        color: black;
+      }
+      .header {
+        background-color: maroon;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+      }
+      .property-listing {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .property {
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 30%;
+      }
+      .property img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      .property-details {
+        padding: 10px 0;
+      }
+      .property-title {
+        font-size: 1.2em;
+        margin: 0;
+      }
+      .property-price {
+        color: maroon;
+        font-weight: bold;
+      }
+      .contact-form {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: maroon;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .contact-form button:hover {
+        background-color: maroon;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to Custom Brokerage</h1>
+      <p>Your trusted partner in property management</p>
+    </div>
+
+    <div class="container">
+      <h2>Property Listings</h2>
+      <div class="property-listing">
+        <div class="property">
+          <img src="property1.jpg" alt="Property 1" />
+          <div class="property-details">
+            <h3 class="property-title">Modern Apartment</h3>
+            <p class="property-price">$1,200 / month</p>
+            <p>2 Beds, 1 Bath, 1,200 sqft</p>
+          </div>
+        </div>
+        <div class="property">
+          <img src="property2.jpg" alt="Property 2" />
+          <div class="property-details">
+            <h3 class="property-title">Luxury Villa</h3>
+            <p class="property-price">$5,000 / month</p>
+            <p>4 Beds, 3 Baths, 3,500 sqft</p>
+          </div>
+        </div>
+        <div class="property">
+          <img src="property3.jpg" alt="Property 3" />
+          <div class="property-details">
+            <h3 class="property-title">Cozy Cottage</h3>
+            <p class="property-price">$800 / month</p>
+            <p>1 Bed, 1 Bath, 800 sqft</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

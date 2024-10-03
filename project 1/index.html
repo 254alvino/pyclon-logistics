@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html style="background-color: black">
+<head>
+  <title>PYCLON LOGISTICS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Base styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    header {
+      background-color: yellow;
+      color: black;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: black;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header-content {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .header-content h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .header-content p {
+      font-size: 1.2em;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .services-title .h2 {
+      color: yellow;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center; /* This line centers the content within the section */
+    }
+
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center; /* Center aligns content within the section */
+      gap: 20px;
+    }
+
+    .services .service-item {
+      flex: 1 1 calc(100% - 40px);
+      max-width: 300px;
+      padding: 20px;
+      background-color: yellow;
+      margin: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .services .service-item h3 {
+      margin-top: 0;
+    }
+
+    /* Responsive styles */
+    @media (min-width: 600px) {
+      .services .service-item {
+        flex: 1 1 calc(50% - 40px);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .services .service-item {
+        flex: 1 1 calc(33.333% - 40px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="[Your Logistics Company Name] Logo" />
+      </div>
+      <div class="header-content">
+        <h1>PYCLON LOGISTICS</h1>
+        <p>Delivering Excellence in Logistics Solutions</p>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="about us.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="careers.html">Careers</a>
+  </nav>
+  <div class="container">
+ 
+    <section id="services" class="section services">
+      <h2>Our Services</h2>
+     
+      <div class="service-item">
+        <h3>Transportation</h3>
+        <p>
+          Reliable and efficient transportation solutions to keep your goods
+          moving smoothly.
+        </p>
+      </div>
+      <div class="service-item">
+        <h3>Warehousing</h3>
+        <p>
+          State-of-the-art warehousing facilities to store and manage your
+          inventory safely.
+        </p>
+      </div>
+      <div class="service-item">
+        <h3>Freight Forwarding</h3>
+        <p>
+          Comprehensive freight forwarding services to streamline your
+          logistics operations.
+        </p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

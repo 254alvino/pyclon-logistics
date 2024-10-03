@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our People</title>
+    <style>
+      /* Basic styling for the people section */
+      .people-section {
+        padding: 20px;
+        background-color: maroon;
+        text-align: center;
+      }
+
+      .people-section h2 {
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      .people-card {
+        display: inline-block;
+        width: 250px;
+        margin: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .people-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      .people-card h3 {
+        margin: 10px 0 5px;
+        font-size: 1.2em;
+        color: maroon;
+      }
+
+      .people-card p {
+        color: #666;
+        font-size: 0.9em;
+      }
+
+      /* Responsive design */
+      @media screen and (max-width: 600px) {
+        .people-card {
+          width: 100%;
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: maroon">
+    <!-- People Section -->
+    <div class="people-section">
+      <h2>Meet Our Team</h2>
+
+      <!-- Person 1 -->
+      <div class="people-card">
+        <img src="images/pexels-photo-2379004.jpeg" alt="John Doe" />
+        <h3>John Doe</h3>
+        <p>CEO & Founder</p>
+      </div>
+
+      <!-- Person 2 -->
+      <div class="people-card">
+        <img
+          src="images/smiling-business-woman-isolated-over-white-background-mature-49170992.webp"
+          alt="Jane Smith"
+        />
+        <h3>Jane Smith</h3>
+        <p>Chief Marketing Officer</p>
+      </div>
+
+      <!-- Person 3 -->
+      <div class="people-card">
+        <img
+          src="images/depositphotos_65116237-stock-photo-happy-young-man-in-shirt.jpg"
+          alt="Mike Johnson"
+        />
+        <h3>Mike Johnson</h3>
+        <p>Head of Development</p>
+      </div>
+
+      <!-- Add more people cards as needed -->
+    </div>
+  </body>
+</html>

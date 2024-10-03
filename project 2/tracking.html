@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tracking Page</title>
+        <style>
+            /* Basic styles for the tracking page */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: maroon;
+            }
+    
+            .header {
+                text-align: center;
+                padding: 40px;
+                background-color: maroon;
+                color: white;
+            }
+    
+            .header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+    
+            .tracking-form-container {
+                max-width: 600px;
+                margin: 40px auto;
+                padding: 20px;
+                background-color: maroon;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+    
+            .tracking-form-container h2 {
+                font-size: 1.8em;
+                margin-bottom: 15px;
+                color: white;
+                text-align: center;
+            }
+    
+            .tracking-form-container form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .tracking-form-container input[type="text"] {
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+            }
+    
+            .tracking-form-container button {
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+                background-color: white;
+                color: maroon;
+                font-size: 1em;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+    
+            .tracking-form-container button:hover {
+                background-color: brown;
+            }
+    
+            .tracking-results {
+                max-width: 600px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #e9ecef;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                display: none; /* Hidden by default */
+            }
+    
+            .tracking-results h3 {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+                color: #333;
+            }
+    
+            .tracking-results p {
+                font-size: 1em;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body style="background-color: black;">
+        <header class="header">
+            <h1>Track Your Shipment</h1>
+        </header>
+    
+        <div class="tracking-form-container">
+            <h2>Enter Your Tracking Number</h2>
+            <form id="trackingForm" onsubmit="return showTrackingResults()">
+                <input type="text" id="trackingNumber" placeholder="Enter tracking number" required>
+                <button type="submit">Track</button>
+            </form>
+        </div>
+    
+        <div class="tracking-results" id="trackingResults">
+            <h3>Tracking Results</h3>
+            <p id="trackingInfo">Your shipment is on its way. Estimated delivery: 3-5 business days.</p>
+        </div>
+    
+        <script>
+            // JavaScript function to show tracking results
+            function showTrackingResults() {
+                const trackingNumber = document.getElementById('trackingNumber').value;
+    
+                if (trackingNumber) {
+                    // Display the tracking results (in a real application, this would be replaced with an API call)
+                    document.getElementById('trackingResults').style.display = 'block';
+                    document.getElementById('trackingInfo').innerText = `Tracking number ${trackingNumber}: Your shipment is on its way. Estimated delivery: 3-5 business days.`;
+                }
+    
+                // Prevent the form from submitting
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+       
+    </body>
+</html>

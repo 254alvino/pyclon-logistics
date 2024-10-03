@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XPO-Logistics</title>
+    <!-- Add favicon link -->
+    <link rel="icon" href="images/images (1).png" type="image/x-icon" />
+    <!-- Include Font Awesome for dropdown arrow icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Reset default margin and padding */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      /* Style the navigation bar */
+      .navbar {
+        background-color: maroon;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Ensure the rest of the content doesn't overlap the navbar */
+      .content {
+        padding-top: 70px;
+      }
+
+      /* Style the links inside the navigation bar */
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+
+      /* Change the color of links on hover */
+      .navbar a:hover {
+        background-color: grey;
+        color: white;
+      }
+
+      /* Create a dropdown container */
+      .dropdown {
+        float: left;
+        position: relative;
+      }
+
+      /* Style the dropdown button */
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 20px;
+        background-color: inherit;
+        margin: 0;
+        cursor: pointer;
+      }
+
+      /* Style the dropdown content (hidden by default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1001;
+        top: 100%; /* Ensure the dropdown appears directly below the button */
+        left: 0;
+      }
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      /* Style the links inside the dropdown */
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      /* Change the color of dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: maroon;
+      }
+
+      /* Mobile-friendly styling */
+      @media (max-width: 768px) {
+        .navbar a,
+        .dropdown .dropbtn {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .navbar .dropdown {
+          float: none;
+        }
+        .search-bar {
+          float: none;
+          text-align: left;
+          margin: 10px 0;
+        }
+        .search-bar input[type="text"] {
+          width: 80%;
+        }
+      }
+
+      /* Style the search bar */
+      .search-bar {
+        float: right;
+        margin: 15px;
+      }
+
+      .search-bar input[type="text"] {
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .search-bar button {
+        padding: 5px 10px;
+        border: none;
+        background-color: grey;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      /* Style the footer */
+      .footer {
+        background-color: maroon;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <!-- Home Link -->
+      <a href="#home">Home</a>
+      <!-- Services Dropdown Menu -->
+      <div class="dropdown">
+        <button class="dropbtn">
+          Services
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="services/freight%20fowarding.html">Freight Forwarding</a>
+          <a href="services/warehousing.html">Warehousing</a>
+          <a href="services/transportation.html">Transportation</a>
+          <a href="services/warehousing.html#contact">Customs Brokerage</a>
+        </div>
+      </div>
+      <!-- About Us Dropdown Menu -->
+      <div class="dropdown">
+        <button class="dropbtn">
+          About Us
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="company.html">Company</a>
+          <a href="people.html">People</a>
+          <a href="careers.html">Careers</a>
+        </div>
+      </div>
+      <!-- Tracking Page Link -->
+      <a href="tracking.html">Tracking</a>
+      <!-- Contact Page Link -->
+      <a href="contact.html">Contact</a>
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button type="button">Search</button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <img src="images/warehouse.jpg" alt="full-screen image" width="899" />
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2024 XPO-Logistics. All rights reserved.</p>
+      <p><a href="#home" style="color: white">Back to Top</a></p>
+    </div>
+  </body>
+</html>

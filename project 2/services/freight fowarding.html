@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freight Forwarding Services</title>
+    <!-- Add favicon link -->
+    <link rel="icon" href="images/images (1).png" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: maroon;
+        font-size: small;
+      }
+      .header {
+        background-color: maroon;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+      }
+      .services,
+      .contact-form {
+        background-color: black;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .services h2,
+      .contact-form h2 {
+        color: white;
+      }
+      .services-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .service {
+        background-color: maroon;
+        padding: 15px;
+        border-radius: 8px;
+        width: 30%;
+        color: white;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: maroon;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .contact-form button:hover {
+        background-color: rgb(114, 33, 33);
+      }
+      .tracking {
+        text-align: center;
+        padding: 20px;
+        background-color: black;
+        color: white;
+      }
+      .tracking input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      .tracking button {
+        padding: 10px 20px;
+        background-color: white;
+        color: #004080;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .tracking button:hover {
+        background-color: #e0e0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to Freight Forwarding Services</h1>
+      <p>Your trusted logistics partner</p>
+    </div>
+
+    <div class="tracking">
+      <h2>Track Your Shipment</h2>
+      <input type="text" placeholder="Enter Tracking Number" />
+      <button type="button">Track</button>
+    </div>
+
+    <div class="container">
+      <div class="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+          <div class="service">
+            <h3>Air Freight</h3>
+            <p>
+              Fast and reliable air freight solutions for all your urgent
+              shipments.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Ocean Freight</h3>
+            <p>
+              Cost-effective ocean freight services for large and bulky goods.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Customs Brokerage</h3>
+            <p>
+              Expert customs brokerage to ensure smooth and compliant
+              import/export processes.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Warehousing</h3>
+            <p>
+              Secure warehousing solutions for short-term and long-term storage
+              needs.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Ground Transportation</h3>
+            <p>
+              Efficient ground transportation services to move goods across
+              regions.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Supply Chain Solutions</h3>
+            <p>
+              Comprehensive supply chain solutions tailored to your business
+              requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

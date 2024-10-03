@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transportation Services</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: maroon;
+        font-size: small;
+      }
+      .header {
+        background-color: maroon;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        padding: 10px;
+      }
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .navbar a:hover {
+        background-color: maroon;
+        color: grey;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+      }
+      .services,
+      .contact-form,
+      .booking-form {
+        background-color: black;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: white;
+      }
+      .services h2,
+      .contact-form h2,
+      .booking-form h2 {
+        color: white;
+      }
+      .services-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .service {
+        background-color: maroon;
+        padding: 15px;
+        border-radius: 8px;
+        width: 30%;
+      }
+      .booking-form input,
+      .booking-form select,
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+      .booking-form button,
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: maroon;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .booking-form button:hover,
+      .contact-form button:hover {
+        background-color: rgb(114, 33, 33);
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to XPO-Logistics Services</h1>
+      <p>Your reliable partner for all transportation needs</p>
+    </div>
+
+    <div class="navbar">
+      <a href="#services">Services</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+      <div class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+          <div class="service">
+            <h3>City Transport</h3>
+            <p>
+              Efficient and reliable transportation services within the city.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Inter-City Transport</h3>
+            <p>Comfortable and timely transport services between cities.</p>
+          </div>
+          <div class="service">
+            <h3>Airport Transfers</h3>
+            <p>
+              Convenient airport transfer services to and from major airports.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Charter Services</h3>
+            <p>Customized transportation solutions for groups and events.</p>
+          </div>
+          <div class="service">
+            <h3>Freight Transport</h3>
+            <p>Secure and timely freight transport services for businesses.</p>
+          </div>
+          <div class="service">
+            <h3>Vehicle Rentals</h3>
+            <p>
+              Flexible vehicle rental options for short and long-term needs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-form" id="booking">
+        <h2>Book Your Ride</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="text"
+            name="phone"
+            placeholder="Your Phone Number"
+            required
+          />
+          <select name="service" required>
+            <option value="" disabled selected>Select Service</option>
+            <option value="city-transport">City Transport</option>
+            <option value="inter-city-transport">Inter-City Transport</option>
+            <option value="airport-transfers">Airport Transfers</option>
+            <option value="charter-services">Charter Services</option>
+            <option value="freight-transport">Freight Transport</option>
+            <option value="vehicle-rentals">Vehicle Rentals</option>
+          </select>
+          <input type="date" name="date" required />
+          <input type="time" name="time" required />
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+
+      <div class="contact-form" id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
